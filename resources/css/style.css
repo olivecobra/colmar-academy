@@ -1,0 +1,43 @@
+/* Universal Styles */
+
+/*header*/
+
+header {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  background-color: lightgrey;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  height: 32px;
+  font-size: 24px;
+  align-items: center;
+  padding-left: 24px;
+}
+
+#colmar {
+  color: black;
+  font-weight: bold;
+}
+
+#academy {
+  color: grey;
+  font-weight: 500;
+}
+
+.nav {
+  display: flex;
+  padding-right: 24px;
+}
+
+.nav li {
+  display: inline-block;
+  padding-left: 16px;
+}
