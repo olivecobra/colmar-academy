@@ -59,15 +59,21 @@ header {
   font-weight: 500;
 }
 
-.nav {
+nav {
   display: flex;
   padding-right: 24px;
 }
 
-.nav li {
+nav a {
   display: inline-block;
   padding-left: 16px;
   color: #000608;
+  transition: color 1s linear 0s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
 }
 
 /*Banner section*/
@@ -105,6 +111,12 @@ header {
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 0 auto;
+  text-decoration: none;
+  transition: background-color 1s ease-in 0s;
+}
+
+#button:hover {
+  background-color: #27556C;
 }
 
 /*Second section*/
@@ -148,6 +160,12 @@ header {
 .square {
   display: flex;
   align-items: center;
+  transition: background-color 1s ease-in 0s;
+}
+
+.square:hover {
+  background-color: #58869D;
+  border: 0.5px inset black;
 }
 
 .square img {
@@ -195,6 +213,11 @@ header {
   padding-bottom: 24px;
 }
 
+.course:hover {
+  background-color: #0A2A3A;
+  color: white;
+}
+
 .course img {
   width: 100%;
   height: auto;
@@ -230,4 +253,22 @@ header {
 .left video {
   width: 100%;
   padding-bottom: 24px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 16px 24px 16px 24px;
+  height: 48px;
+  border-top: 0.5px solid #58869D;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+  padding-left: 8px;
 }
