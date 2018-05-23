@@ -2,7 +2,7 @@
 
 html {
   font-size: 18px;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -18,6 +18,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+  padding-bottom: 8px;
 }
 
 h4 {
@@ -34,8 +35,7 @@ header {
   align-items: center;
   height: 64px;
   width: 100%;
-  position: fixed;
-  background-color: lightgrey;
+  background-color: #58869D;
   z-index: 1;
   top: 0px;
 }
@@ -46,15 +46,16 @@ header {
   font-size: 24px;
   align-items: center;
   padding-left: 24px;
+  color: #000608;
 }
 
 #colmar {
-  color: black;
+  color: #000608;
   font-weight: bold;
 }
 
 #academy {
-  color: grey;
+  color: #B4DDF0;
   font-weight: 500;
 }
 
@@ -66,6 +67,7 @@ header {
 .nav li {
   display: inline-block;
   padding-left: 16px;
+  color: #000608;
 }
 
 /*Banner section*/
@@ -74,17 +76,19 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
   width: 100%;
-  background-color: lightblue;
+  background-color: #B4DDF0;
 }
 
 .bannertext {
-  border: 2px solid black;
   width: 40%;
   display: block;
 }
 
+.bannertext2 {
+  padding-right: 4rem;
+  color: #0A2A3A;
+}
 
 .bannertext h1 {
   padding-bottom: 1.5rem;
@@ -95,13 +99,12 @@ header {
 }
 
 #button {
-  background-color: darkgrey;
+  background-color: #0A2A3A;
   text-align: center;
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 0 auto;
-  width: 80%;
 }
 
 /*Second section*/
@@ -109,14 +112,14 @@ header {
 .second {
   display: flex;
   flex-direction: row;
-  border: 2px solid black;
   justify-content: center;
   width: 100%;
+  background-color: white;
+  color: #000608;
 }
 
 .left {
   width: 60%;
-  border: 2px solid blue;
   padding: 32px 24px 32px 24px;
 }
 
@@ -124,25 +127,26 @@ header {
   width: 100%;
 }
 
-.left h1 {
+.left h2 {
   padding-bottom: 24px;
   padding-top: 32px;
 }
 
 .left span {
   padding-bottom: 32px;
+  font-size: 0.85rem;
 }
 
 .information {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 40%;
+  padding-top: 32px;
 }
 
 .square {
   display: flex;
-  border: 2px dotted pink;
   align-items: center;
 }
 
@@ -158,16 +162,19 @@ header {
   align-items: center;
 }
 
+.info p {
+  padding-bottom: 8px;
+}
+
 /*Third section*/
 
 .third {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid black;
   width: 100%;
   padding-top: 32px;
-  background-color: lightgreen;
+  background-color: #58869D;
 }
 
 .courseinfo {
@@ -177,19 +184,50 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px solid blue;
   width: auto;
   justify-content: center;
 }
 
 .course {
   width: 25%;
-  border: 2px dotted pink;
   margin: 32px 16px 0px 16px;
   background-color: white;
+  padding-bottom: 24px;
 }
 
 .course img {
   width: 100%;
   height: auto;
+  padding-bottom: 16px;
+}
+
+.course p {
+  padding-bottom: 8px;
+}
+
+.course h3, .course p {
+  padding-left: 16px;
+}
+
+/*Fourth section*/
+
+.fourth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 32px;
+  background-color: #B4DDF0;
+  color: #0A2A3A;
+}
+
+.fourthcontent {
+  display: flex;
+  flex-direction: row;
+  color: #0A2A3A;
+}
+
+.left video {
+  width: 100%;
+  padding-bottom: 24px;
 }
