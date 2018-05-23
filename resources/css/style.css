@@ -5,6 +5,26 @@ html {
   font-family: sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
 /*Header*/
 
 header {
@@ -59,21 +79,29 @@ header {
   background-color: lightblue;
 }
 
-.banner img {
-  width: 60%;
-  padding: 32px 24px;
-}
-
 .bannertext {
   border: 2px solid black;
+  width: 40%;
+  display: block;
+}
+
+
+.bannertext h1 {
+  padding-bottom: 1.5rem;
+}
+
+.bannertext h3 {
+  padding-bottom: 1.5rem;
 }
 
 #button {
   background-color: darkgrey;
+  text-align: center;
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
   margin: 0 auto;
+  width: 80%;
 }
 
 /*Second section*/
@@ -128,4 +156,40 @@ header {
   display: block;
   width: 65%;
   align-items: center;
+}
+
+/*Third section*/
+
+.third {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  width: 100%;
+  padding-top: 32px;
+  background-color: lightgreen;
+}
+
+.courseinfo {
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2px solid blue;
+  width: auto;
+  justify-content: center;
+}
+
+.course {
+  width: 25%;
+  border: 2px dotted pink;
+  margin: 32px 16px 0px 16px;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
 }
