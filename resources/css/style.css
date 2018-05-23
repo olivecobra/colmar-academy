@@ -30,7 +30,6 @@ h4 {
 
 header {
   display: flex;
-  font-family: sans-serif;
   justify-content: space-between;
   align-items: center;
   height: 64px;
@@ -76,6 +75,35 @@ nav a:hover {
   color: white;
 }
 
+.mobile {
+  display: none;
+}
+
+/*Header section mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  .pc {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
 /*Banner section*/
 
 .banner {
@@ -117,6 +145,46 @@ nav a:hover {
 
 #button:hover {
   background-color: #27556C;
+}
+
+/*Banner section mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .banner .left {
+    width: 100%;
+    top: 0;
+    padding: 0;
+  }
+
+  .bannertext {
+    display: block;
+    width: 100%;
+    padding: 32px 16px 32px 16px;
+  }
+
+  .bannertext2 {
+    padding-right: 0;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
 }
 
 /*Second section*/
@@ -184,6 +252,50 @@ nav a:hover {
   padding-bottom: 8px;
 }
 
+/*Second section mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  .left.practice {
+    display: none;
+  }
+
+  .information {
+    width: 100%;
+    padding-top: 16px;
+    margin-bottom: 32px;
+  }
+
+  .square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .square:hover {
+    background-color: white;
+    border: none;
+  }
+
+  .square img {
+    width: 100%;
+  }
+
+  .info {
+    display: block;
+    width: 100%;
+    align-items: center;
+    padding-left: 16px;
+  }
+
+  .info p {
+    padding-bottom: 8px;
+  }
+
+}
+
 /*Third section*/
 
 .third {
@@ -232,6 +344,51 @@ nav a:hover {
   padding-left: 16px;
 }
 
+/*Third section mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  .course img, .course p {
+    display: none;
+    padding: 0;
+  }
+
+  .third {
+    background-color: #B4DDF0;
+  }
+
+  .third h2 {
+    padding-bottom: 16px;
+  }
+
+  .course h3 {
+    padding: 18px 0px 0px 16px;
+  }
+
+  .courseinfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  .course {
+    display: block;
+    width: 100%;
+    margin: 8px 8px;
+    background-color: #58869D;
+  }
+
+  .course:hover {
+    background-color: #58869D;
+    color: black;
+  }
+
+}
+
 /*Fourth section*/
 
 .fourth {
@@ -255,6 +412,29 @@ nav a:hover {
   padding-bottom: 24px;
 }
 
+/*Fourth section mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  .fourth .information {
+    display: none;
+  }
+
+  .fourth {
+    background-color: white;
+  }
+
+  .fourthcontent p, .fourthcontent h3 {
+    display: none;
+  }
+
+  .fourthcontent .left {
+    width: 100%;
+    padding: 16px 0px 24px 0px;
+  }
+
+}
+
 /*Footer*/
 
 footer {
@@ -271,4 +451,18 @@ footer a {
   color: black;
   text-decoration: none;
   padding-left: 8px;
+}
+
+/*Header mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    font-size: 0.75rem;
+  }
+
+  footer a {
+    display: none;
+  }
+
 }
