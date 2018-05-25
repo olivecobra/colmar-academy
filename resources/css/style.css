@@ -79,6 +79,33 @@ nav a:hover {
   display: none;
 }
 
+
+/*Header section tablet <800px*/
+
+@media only screen and (max-width: 800px) {
+
+  .pc {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hidden {
+     visibility: hidden;
+  }
+
+}
+
+
 /*Header section mobile <480px*/
 
 @media only screen and (max-width: 480px) {
@@ -100,6 +127,10 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .hidden {
+    visibility: visible;
   }
 
 }
@@ -147,17 +178,10 @@ nav a:hover {
   background-color: #27556C;
 }
 
-/*Banner section mobile <480px*/
 
-@media only screen and (max-width: 480px) {
+/*Banner section tablet <800px*/
 
-  h3 {
-    font-size: 1.25rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
+@media only screen and (max-width: 800px) {
 
   .banner {
     display: flex;
@@ -180,12 +204,23 @@ nav a:hover {
     padding-right: 0;
   }
 
-  .banner h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+}
+
+
+/*Banner section mobile <480px*/
+
+@media only screen and (max-width: 480px) {
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
   }
 
 }
+
 
 /*Second section*/
 
@@ -252,6 +287,56 @@ nav a:hover {
   padding-bottom: 8px;
 }
 
+
+/*Second section tablet <800px*/
+
+@media only screen and (max-width: 800px) {
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .practice {
+    width: 100%;
+    top: 0;
+    padding: 0;
+  }
+
+  .practice h2, .practice p, .practice span {
+    padding-left: 16px;
+  }
+
+  .information {
+    width: 100%;
+    padding-top: 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+  }
+
+  .square img {
+    width: 100%;
+  }
+
+  .info {
+    display: block;
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+
 /*Second section mobile <480px*/
 
 @media only screen and (max-width: 480px) {
@@ -261,6 +346,8 @@ nav a:hover {
   }
 
   .information {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding-top: 16px;
     margin-bottom: 32px;
@@ -344,6 +431,21 @@ nav a:hover {
   padding-left: 16px;
 }
 
+
+/*Third section tablet <800px*/
+
+@media only screen and (max-width: 800px) {
+
+  .course {
+    width: 45%;
+    margin: 32px 8px 0px 8px;
+    background-color: white;
+    padding-bottom: 24px;
+  }
+
+}
+
+
 /*Third section mobile <480px*/
 
 @media only screen and (max-width: 480px) {
@@ -417,9 +519,9 @@ nav a:hover {
   padding-bottom: 24px;
 }
 
-/*Fourth section mobile <480px*/
+/*Fourth section tablet and mobile <800px*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
 
   .fourth .information {
     display: none;
